@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicaSet
+metadata:
+  name: hello-ReplicaSet
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nextjs
+  template:
+    metadata:
+      labels:
+        app: nextjs
+    spec:
+      containers:
+      - name: my-pod
+        image: chiufin/nextjs-dashboard
+        ports:
+        - containerPort: 8090
