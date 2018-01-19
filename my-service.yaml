@@ -10,4 +10,4 @@ spec:
     nodePort: 30390
     protocol: TCP
   selector:
-    app: my-pod
+    app: webserver
