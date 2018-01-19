@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: yours-pod
+  name: my-pod
   labels:
-    app: webserver
+    app: wordpress
 spec:
   containers:
-  - name: pod-demo
-    image: grape-f2e-server
+  - name: wordpress-pod
+    image: wordpress/4.9.2-php5.6-apache
     ports:
     - containerPort: 8090
